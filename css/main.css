@@ -666,7 +666,6 @@ Nav Overlay
 .overlay ul li a {
     text-align: center;
     display: block;
-    padding: 50px 0;
     min-width: 190px;
     border: 2px solid #fff;
     border-radius: 3px;
@@ -678,6 +677,7 @@ Nav Overlay
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     letter-spacing: 10px;
+    padding: 7px 0px;
 }
 
 .overlay ul li a:hover,
@@ -796,7 +796,7 @@ Nav Overlay
 .popup h2 {
     margin-top: 0;
     color: #333;
-    font-family: 'Playfair Display', serif;
+    font-family: 'aktiv-grotesk', sans-serif;
 }
 
 .popup .close {
@@ -820,7 +820,8 @@ Nav Overlay
 }
 
 .music-link img {
-    width: 30%;
+    max-width: 100px;
+    height: 25px;
 }
 
 #logo {
@@ -832,12 +833,14 @@ Nav Overlay
     margin-right: auto;
     width: 12%;
     z-index: 1000;
+    visibility: hidden;
 }
 
 .greeting-text {
     position: relative;
     float: left;
-    font-size: 2rem;
+    margin-top: 10px;
+    font-size: 3rem;
     text-align: left;
     font-weight: 900;
     letter-spacing: -1.5px;
@@ -859,15 +862,50 @@ Nav Overlay
     overflow: hidden;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content img {
+    width: 30%;
+}
+
+.main-content article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 20px;
+}
+
+.main-content article h6 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.9rem;
+    margin-top: 20px;
+}
 
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 800px) {
     .box {
         width: 70%;
+    }
+    .main-content {
+        flex-direction: column;
+        margin-top: 35%;
     }
 
     .popup {
         width: 70%;
+    }
+    .music-link h6 {
+        margin-top: 0;
+        letter-spacing: 0px;
+        margin-bottom: 5px;
     }
 }
 
