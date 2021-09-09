@@ -1,20 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900");
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English");
 @import url("https://use.typekit.net/vpc7vvp.css");
 
 @font-face {
-    font-family: 'Another Danger';
-    src: url('../fonts/Another\ Danger\ -\ Demo.ttf');
+    font-family: "Another Danger";
+    src: url("../fonts/Another\ Danger\ -\ Demo.ttf");
     /* IE9 Compat Modes */
-    src: url('../fonts/Another\ Danger\ -\ Demo.eot') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../fonts/Another\ Danger\ -\ Demo.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/Another\ Danger.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/Another\ Danger\ -\ Demo.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/Another\ Danger\ -\ Demo.svg') format('svg');
+    src: url("../fonts/Another\ Danger\ -\ Demo.eot") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/Another\ Danger\ -\ Demo.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/Another\ Danger.woff") format("woff"),
+        /* Pretty Modern Browsers */ url("../fonts/Another\ Danger\ -\ Demo.ttf") format("truetype"),
+        /* Safari, Android, iOS */ url("../fonts/Another\ Danger\ -\ Demo.svg") format("svg");
     /* Legacy iOS */
 }
 
@@ -82,8 +78,6 @@ a {
     font-size: 16px;
 }
 
-
-
 .content-title {
     font-size: 2rem;
     margin: 80px 0 0 0;
@@ -102,8 +96,6 @@ a {
     font-weight: 400;
     animation-delay: calc(2s + 4s * 0.25);
 }
-
-
 
 /* Glitch styles */
 .glitch {
@@ -128,11 +120,11 @@ a {
     background-blend-mode: none;
 }
 
-.glitch-img:nth-child(n+2) {
+.glitch-img:nth-child(n + 2) {
     opacity: 0;
 }
 
-.glitch-img:nth-child(n+2) {
+.glitch-img:nth-child(n + 2) {
     animation-duration: 4s;
     animation-delay: 2s;
     animation-timing-function: linear;
@@ -162,8 +154,6 @@ a {
     background-blend-mode: overlay;
     animation-name: glitch-anim-flash;
 }
-
-
 
 /* Animations */
 
@@ -479,7 +469,6 @@ a {
 
 /* Flash */
 @keyframes glitch-anim-flash {
-
     0%,
     5% {
         opacity: 0.2;
@@ -517,13 +506,13 @@ a {
 }
 
 .link {
-    font-family: 'Another Danger';
+    font-family: "Another Danger";
     letter-spacing: 4px;
 }
 
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     background: #000;
 }
 
@@ -547,7 +536,7 @@ Navigation
 .nav-toggle span,
 .nav-toggle span:before,
 .nav-toggle span:after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 35px;
@@ -558,11 +547,11 @@ Navigation
 }
 
 .nav-toggle span:before {
-    top: -10px
+    top: -10px;
 }
 
 .nav-toggle span:after {
-    bottom: -10px
+    bottom: -10px;
 }
 
 .nav-toggle span,
@@ -573,12 +562,12 @@ Navigation
 }
 
 .nav-toggle.active span {
-    background-color: transparent
+    background-color: transparent;
 }
 
 .nav-toggle.active span:before,
 .nav-toggle.active span:after {
-    top: 0
+    top: 0;
 }
 
 .nav-toggle.active span:before {
@@ -601,7 +590,7 @@ Navigation
 
 .navicon p {
     margin: 1px 50px 0 0;
-    color: #FFF;
+    color: #fff;
 }
 
 .navicon-fixed {
@@ -622,7 +611,11 @@ Nav Overlay
     width: 100%;
     height: 100%;
     background: rgb(34, 193, 195);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 0.6909138655462185) 0%, rgba(253, 187, 45, 0.4920343137254902) 100%);
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 0.6909138655462185) 0%,
+        rgba(253, 187, 45, 0.4920343137254902) 100%
+    );
 }
 
 /* Menu style */
@@ -654,7 +647,7 @@ Nav Overlay
 }
 
 .overlay ul li:last-child {
-    margin-right: 0px
+    margin-right: 0px;
 }
 
 .overlay ul li i {
@@ -796,7 +789,7 @@ Nav Overlay
 .popup h2 {
     margin-top: 0;
     color: #333;
-    font-family: 'aktiv-grotesk', sans-serif;
+    font-family: "aktiv-grotesk", sans-serif;
 }
 
 .popup .close {
@@ -811,7 +804,7 @@ Nav Overlay
 }
 
 .popup .close:hover {
-    color: #06D85F;
+    color: #06d85f;
 }
 
 .popup .pop-up-content {
@@ -850,7 +843,7 @@ Nav Overlay
 }
 
 .greeting-text:hover {
-    color: blue
+    color: blue;
 }
 
 .youtube-container {
@@ -888,7 +881,23 @@ Nav Overlay
     margin-top: 20px;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 @media screen and (max-width: 800px) {
     .box {
@@ -911,12 +920,12 @@ Nav Overlay
 
 @media screen and (min-width: 320px) {
     html {
-        font-size: calc(16px + 6 * ((100vw - 320px) /680));
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
 }
 
 @media screen and (min-width: 1000px) {
     html {
-        font-size: 22px
+        font-size: 22px;
     }
 }
